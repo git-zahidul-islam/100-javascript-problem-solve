@@ -12,3 +12,4 @@ function totalSum(...params){
 
 console.log(totalSum(1,2,4,5,6,222));
 // solved
+console.log(performance.now());

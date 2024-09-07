@@ -1,3 +1,5 @@
+console.log(performance.now());
+
 function arrayReplace(inputArray, elementToReplace, subtractionElem){
     inputArray.forEach((element,index)=>{
         if(elementToReplace == element){
@@ -8,5 +10,5 @@ function arrayReplace(inputArray, elementToReplace, subtractionElem){
 }
 
 arrayReplace([500, 23, 50],500,3)
-
+console.log(performance.now());
 // solved

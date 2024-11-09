@@ -50,4 +50,17 @@ const secondLargest = (arr) => {
     return secondLargest[1]
 };
 
-console.log(secondLargest([3, 5, 7, 5, 2, 8]));
+// 05. Array Chunking
+
+// Problem: Write a function chunkArray(arr, size) that splits an array into chunks of a specified size and returns a new array of these chunks.
+// Example:
+// chunkArray([1, 2, 3, 4, 5, 6], 2); // Output: [[1, 2], [3, 4], [5, 6]]
+
+const chunkArray = (arr,size) => {
+    let result = [];
+    for(let i = 0; i < arr.length; i += size){
+        result.push(arr.slice(i, i+size))
+    }
+    return result;
+}
+// console.log(chunkArray([1, 2, 3, 4, 5, 6,3,4,5,6], 4));

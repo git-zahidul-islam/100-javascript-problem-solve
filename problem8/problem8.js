@@ -21,7 +21,7 @@ const findLargestNumber = (arr) =>{
         return acc > current ? acc : current
     },0)
 };
-function findLargestNumber(arr) {
+function findLargestNumber2(arr) {
     return Math.max(...arr);
 };
 
@@ -38,3 +38,16 @@ const removeDuplicates =(arr)=>{
 // console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]));
 
 
+// 04. Find the Second Largest Number in an Array
+
+// Problem: Write a function secondLargest(arr) that finds and returns the second largest number in an array of numbers. Handle cases where the array has fewer than two unique numbers.
+// Example:
+// secondLargest([3, 5, 7, 5, 2, 8]); // Output: 7
+
+const secondLargest = (arr) => {
+    const uniqueArr = [... new Set(arr)];
+    const secondLargest = uniqueArr.sort((a,b) => b -a)
+    return secondLargest[1]
+};
+
+console.log(secondLargest([3, 5, 7, 5, 2, 8]));

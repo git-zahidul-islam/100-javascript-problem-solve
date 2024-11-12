@@ -12,7 +12,25 @@ const combineArrays = (arr1, arr2) => {
     return combinedUnique;
   };
   
-  console.log(combineArrays([1, 2, 3], [2, 3, 4])); 
+  // console.log(combineArrays([1, 2, 3], [2, 3, 4])); 
 
   
 
+  // 02: Find All Indices of a Target Value
+  // Write a function that, given an array and a target value, returns an array of all indices where the target value is found. If the target value is not in the array, return an empty array.
+  
+  // Example:
+  // Input: [1, 2, 3, 2, 4, 2, 5], target = 2
+  // Output: [1, 3, 5]
+
+  function findAllIndices(arr,target){
+    const result = [];
+
+    for (let i = 0; i < arr.length; i++) {
+      if(arr[i] == target){
+        result.push(i)
+      }
+    }
+    return result;
+  }
+  console.log(findAllIndices([1,1,3,4,],2));

@@ -13,6 +13,6 @@ function findLargest(arr) {
     return largest;
 }
 
-// Example Usage
+// Example Usage here
 const numbers = [34, 67, 23, 89, 12];
 console.log(findLargest(numbers)); // Output: 89

@@ -34,3 +34,5 @@ const combineArrays = (arr1, arr2) => {
     return result;
   }
   console.log(findAllIndices([1,1,3,4,],2));
+
+// added another

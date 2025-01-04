@@ -6,3 +6,6 @@ function countCharacter(str, char) {
     return str.split(char).length - 1;
 }
 console.log(countCharacter("hello world", "o")); // Output: 2
+
+
+// new branch ---- 01... [ this is new branch code not pulled - create main branch and pushed ]

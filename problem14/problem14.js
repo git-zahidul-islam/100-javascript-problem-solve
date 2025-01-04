@@ -8,4 +8,4 @@ function countCharacter(str, char) {
 console.log(countCharacter("hello world", "o")); // Output: 2
 
 
-// new branch ---- 01... [ this is new branch code not pulled - create main branch and pushed ]
+// new branch ---- 01... 

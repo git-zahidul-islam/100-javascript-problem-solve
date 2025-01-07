@@ -30,3 +30,5 @@ function findLargestNumber(arr) {
 console.log(findLargestNumber([3, 7, 2, -5, -1]));
 
 const num = [1, 2, 3, 4, 5];
+
+const sum = num.reduce((acc, curr) => acc + curr, 0);
